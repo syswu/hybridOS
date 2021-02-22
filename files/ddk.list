@@ -1,0 +1,16 @@
+docker-ce
+audit-libs-python 
+checkpolicy  
+container-selinux 
+containerd.io 
+docker-ce-cli 
+docker-ce-rootless-extras 
+fuse-overlayfs 
+fuse3-libs  
+libcgroup  
+libsemanage-python   
+policycoreutils   
+policycoreutils-python 
+python-IPy
+setools-libs 
+slirp4netns
