@@ -13,5 +13,13 @@ cmd/kubeadm/app/constants/constants.go
 	ControlPlaneMem = 1700
 ```
 
-### 1.2 disable scheduler and controller-manager
+### 1.2 ignore scheduler and controller-manager
 
+cmd/kube-apiserver/app/phases/controlplane/manifests.go
+
+cat cmd/kube-apiserver/app/phases/controlplane/manifests.go | grep -A 1 "func CreateInitStaticPodManifestFiles"
+
+```
+-  return CreateStaticPodFiles(manifestDir, patchesDir, &cfg.ClusterConfiguration, &cfg.LocalAPIEndpoint, kubeadmconstants.KubeAPIServer, kubeadmconstants.KubeControllerManager, kubeadmconstants.KubeScheduler)
++ return CreateStaticPodFiles(manifestDir, patchesDir, &cfg.ClusterConfiguration, &cfg.LocalAPIEndpoint, kubeadmconstants.KubeAPIServer)
+```
