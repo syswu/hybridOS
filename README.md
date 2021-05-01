@@ -1,5 +1,5 @@
 # hybridOS
-support KVM and containerd using kubernetes
+support KVM and containerd using kubernetes, it is a heavy work now.
 
 # scripts
 
