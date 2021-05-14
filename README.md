@@ -1,9 +1,6 @@
 # hybridOS
+
 support KVM and containerd using kubernetes, it is a heavy work now.
-
-# scripts
-
-- [os-ctl](os-ctl): install containerd, docker, kubernetes, qemu-kvm
 
 # files
 - [mos.list](files/mos.list): minimize CentOS 7.x by removing unused rpm. (170MB --> 95MB)
